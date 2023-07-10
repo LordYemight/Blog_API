@@ -2,6 +2,7 @@
 
 ## How to Use the App
 register (localhost:6000/api/auth/register) - `POST`
+```json
 {
   "name": "Tunde Adigun",
   "email": "example@yahoo.com",
