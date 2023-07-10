@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const moment = require('moment-timezone')
 
 const postSchema = new mongoose.Schema({
   title: {
@@ -9,13 +10,23 @@ const postSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'user',
-    required: true,
+  creators_Name: {
+    id: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'user'
+    },
+    username: {
+      type: String
+    },
   },
+  createdAt: {
+    type: Date,
+    default: moment().tz('Your_Timezone').add(1, 'hours').toDate(),
+  }
 });
 
 const Post = mongoose.model('Post', postSchema);
 
 module.exports = Post;
+
+

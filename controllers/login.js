@@ -29,7 +29,7 @@ const logIn = async (req, res) => {
     }
 
     // If credentials are valid, generate a JWT token
-    const token = jwt.sign({ username }, process.env.SECRET_KEY);
+    const token = jwt.sign({ username }, process.env.SECRET_KEY, {expiresIn: "300m"});
 
     res.json({ token, message: 'log-in sucessful' });
   } catch (error) {

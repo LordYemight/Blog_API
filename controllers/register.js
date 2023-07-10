@@ -5,12 +5,11 @@ const bcrypt = require('bcrypt');
 
 const register = async (req, res) => {
   try {
-    const { username, email, password, posts } = req.body
+    const { username, email, password } = req.body
     const { error } = regSchema.validate(req.body);
     if (error) {
       return res.status(400).json({ error: error.details[0].message });
     }
-
      // check if user exists 
     const existingUser = await user.findOne ({ email })
     if (existingUser) {
@@ -23,8 +22,7 @@ const register = async (req, res) => {
     const newUser = new user ({
       username, 
       email,
-      password: hashedPassword,
-      posts: posts || []
+      password: hashedPassword
     });
     await newUser.save();
     res.status(201).json({ message: 'registration successful' });

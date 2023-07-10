@@ -1,15 +1,17 @@
 const Post = require('../models/postSchema');
 
-
 const post =  async (req, res) => {
   try {
     const { title, content } = req.body;
-    const userId = req.user.id;
+    const { _id: userId, username: userName } = req.user;
 
     const post = new Post({
       title,
       content,
-      user: userId,
+      creators_Name: {
+        id: userId,
+        username: userName,
+      },
     });
 
     const savedPost = await post.save();
