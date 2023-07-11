@@ -46,7 +46,7 @@ Delete a particular post - `DELETE` (localhost:6000/api/posts/:id)
 ## Sample Post Data
 "allPost": [
         {
-            "creators_Name": {
+            "writerName": {
                 "username": "Adisa"
             },
             "_id": "64ac01d819d20312a25c39f2",
@@ -56,7 +56,7 @@ Delete a particular post - `DELETE` (localhost:6000/api/posts/:id)
             "__v": 0
         },
         {
-            "creators_Name": {
+            "writerName": {
                 "username": "Adisa"
             },
             "_id": "64ac113ef824bc874c85f295",
