@@ -10,7 +10,7 @@ const postSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  creators_Name: {
+  writerName: {
     id: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'user'

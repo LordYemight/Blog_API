@@ -8,7 +8,7 @@ const post =  async (req, res) => {
     const post = new Post({
       title,
       content,
-      creators_Name: {
+      writerName: {
         id: userId,
         username: userName,
       },
