@@ -26,7 +26,7 @@ Upload Product (localhost:6000/api/posts) - `POST`
 }
 
 
-Sample ID = "64ac01d819d20312a25c39f2"
+Sample ID = "64ac9d82cb41594a3b415884"
 
 Get all users - `GET` (localhost:6000/api/users)
 
@@ -44,25 +44,16 @@ Delete a particular post - `DELETE` (localhost:6000/api/posts/:id)
 
 
 ## Sample Post Data
-"allPost": [
+{
+    "allPost": [
         {
             "writerName": {
-                "username": "Adisa"
+                "username": "Agibade"
             },
-            "_id": "64ac01d819d20312a25c39f2",
-            "title": "First Post",
-            "content": "Nothing is impossible.",
-            "createdAt": "2023-07-10T13:58:57.955Z",
-            "__v": 0
-        },
-        {
-            "writerName": {
-                "username": "Adisa"
-            },
-            "_id": "64ac113ef824bc874c85f295",
-            "title": "Life is a teacher",
-            "content": "Life is a teacher, as you grow and experience life, the more you learn.",
-            "createdAt": "2023-07-10T15:08:27.529Z",
+            "_id": "64ac9d82cb41594a3b415884",
+            "title": "The Importance of Regular Exercise",
+            "content": "Regular exercise is essential for maintaining a healthy lifestyle. It not only improves physical fitness but also has a positive impact on mental well-being. Engaging in physical activities such as jogging, swimming, or cycling helps strengthen muscles and improves cardiovascular health. Additionally, exercise releases endorphins, which are natural mood boosters, leading to reduced stress and increased happiness. It also aids in weight management and promotes better sleep patterns. Make exercise a part of your daily routine and experience the multitude of benefits it offers",
+            "createdAt": "2023-07-11T01:04:34.432Z",
             "__v": 0
         }
     ]
