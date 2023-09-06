@@ -1,5 +1,38 @@
 # Blog_API
+## Prerequisites
 
+Before you begin, make sure you have the following prerequisites installed on your machine:
+
+- Node.js: [Download and Install Node.js](https://nodejs.org/)
+- Git: [Download and Install Git](https://git-scm.com/)
+
+## Installation
+- Clone the repository into your local directory:
+
+- git clone 'repo-url'
+- cd 'project-directory'
+- npm install
+   
+Create a .env file in the root directory and store the following:
+ 
+- MONGODB_URI=Insert the correct connection URL for your MongoDB database.
+- port=3000  # Replace with your desired port number.
+- secret=for your jwt token. 
+
+## Technologies Used
+Some of the technologies used in the development of this web application are as follow:
+- MongoDB Atlas: It provides a free cloud service to store MongoDB collections.
+- Node.js: A runtime environment to help build fast server applications using JS.
+- Express.js: A popular Node.js framework to build scalable server-side for web applications.
+- Mongoose: An ODM(Object Data Modelling)library for MongoDB and Node.js
+- Nodemailer: A powerful library for sending emails from your Node.js applications. After an artist uploads an album, an email is sent to the artist which entails the ablbum tracks and cover.
+- Multer:  It is use for handling file uploads. 
+- Dotenv: This library is used for managing environment variables in your Node.js applications. It stores sensitive or configuration-related information (such as API keys, database URLs, or secret keys) in a separate `.env` file. This helps keep the application's configuration secure and separate from your codebase.
+- Joi: Joi is a validation library for JavaScript applications, particularly useful in the context of APIs and form validation. 
+- Jwt: It is used to ensure the integrity and security of information between a client and a server. JWTs are signed with a secret key on the server to ensure their authenticity and integrity, and they are commonly used to protect routes and endpoints, ensuring that only authorized users can access certain parts of your application.
+
+
+  
 ## How to Use the App
 register (localhost:6000/api/auth/register) - `POST`
 ```json
